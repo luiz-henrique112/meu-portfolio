@@ -67,7 +67,6 @@ h2 {
 .paragrafo {
     color: white;
     font-family: 'Biotif';
-    max-width: 700px;
     margin-left: 20px;
     z-index: 1;
 }
