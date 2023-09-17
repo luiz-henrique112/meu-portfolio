@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'Biotif'; 
+    src: url('./biotif/Biotif-Regular.ttf') format('opentype'); 
+}
+
+@font-face {
+    font-family: 'Gilroy'; 
+    src: url('./Gilroy.otf') format('opentype');
+   
+}
+
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    font: weight 10px; 
+    background: linear-gradient(to right, black, gray), url('./image-removebg-preview.png');
+}
+
+header {
+    background-color: #1d1d1d;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-family: Helvetica;
+    font-family: 'Biotif';
+    background-color: #1d1d1d;
+}
+
+a {
+    font-family: 'Biotif';
+    color: #ADD8E6;
+}
+
+nav a:hover {
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+p {
+    color:white;
+    font-family: 'Biotif';
+    margin-right: 0px auto;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    font-family: 'Gilroy';
+    font-weight: bolder;
+}
+
+.conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.paragrafo {
+    color: white;
+    font-family: 'Biotif';
+    max-width: 700px;
+    margin-left: 20px;
+    z-index: 1;
+}
+
+#inicio:visited {
+    color: rgb(201, 29, 29);
+    margin: 0px;
+}
+
+#codeIcon {
+    border-radius: 200px;
+    margin: 0px;
+    padding: 0px;
+    width: 275px;
+    height: 275px;
+    position: relative;
+    z-index: 2;
+}
+
+
+
+

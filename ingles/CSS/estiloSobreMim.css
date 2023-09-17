@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'Biotif'; 
+    src: url('./biotif/Biotif-Regular.ttf') format('opentype'); 
+}
+
+@font-face {
+    font-family: 'Gilroy'; 
+    src: url('./Gilroy.otf') format('opentype'); 
+}
+
+body {
+    background: linear-gradient(to right, black, gray);
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    font: weight 10px;
+}
+
+header {
+    background-color: #1d1d1d;;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-family:  Helvetica;
+     font-family: 'Biotif';
+     background-color: #1d1d1d;
+}
+
+a{
+    font-family: 'Biotif';
+    color: #ADD8E6;
+}
+
+nav a:hover {
+    
+   text-decoration: none;
+    margin: 0 15px;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    font-family: 'Gilroy';
+    font-weight:bolder ;
+   
+}
+p {
+    color:white;
+    font-family: 'Biotif';
+    margin-right: 0px auto;
+    margin-left: 30px;
+    
+}
+
+#sobre:visited {
+    color: rgb(201, 29, 29);
+    text-decoration: underline;
+    margin: 0 15px;
+  
+}
+
+#fotoMinha{
+    border-radius: 200px;
+    margin:0px auto;
+    padding: 0px;
+    border-color: azure;
+    margin-right: 20px;
+}
+
+#paragrafo1{
+    display: flex;
+    
+}
+
+.paragrafo {
+    margin-bottom: 200px;
+    margin-left: 30px;
+}
