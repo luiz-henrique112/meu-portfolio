@@ -1,15 +1,12 @@
 
 @font-face {
-    font-family: 'Biotif'; /* O nome da sua fonte */
-    src: url('./biotif/Biotif-Regular.ttf') format('opentype'); /* O caminho para sua fonte e seu formato */
-    /* Você também pode adicionar outros formatos de fonte para compatibilidade cruzada, como woff, woff2, etc. */
+    font-family: 'Biotif'; 
+    src: url('./biotif/Biotif-Regular.ttf') format('opentype'); 
 }
 
 @font-face {
-    font-family: 'Gilroy'; /* O nome da sua fonte */
-    src: url('./Gilroy.otf') format('opentype'); /* O caminho para sua fonte e seu formato */
-    /* Você também pode adicionar outros formatos de fonte para compatibilidade cruzada, como woff, woff2, etc. */
-}
+    font-family: 'Gilroy'; 
+    src: url('./Gilroy.otf') format('opentype'); 
 
 body {
     
