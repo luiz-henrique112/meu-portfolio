@@ -1,0 +1,326 @@
+@font-face {
+    font-family: 'Biotif';
+    src: url('./biotif/Biotif-Regular.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('./Gilroy.otf') format('opentype');
+}
+
+body {
+    background: linear-gradient(30deg, #081083, #000000);
+    background-attachment: fixed;
+    margin: 0;
+    padding: 1%;
+    font-size: 19px; /* Tamanho de fonte raiz relativo */
+}
+
+header {
+    background-color: rgba(78, 78, 78, 0.329);
+    backdrop-filter: blur(12px);
+    color: #fff;
+    text-align: center;
+    padding: 1.1%;
+    border-radius: 12px;
+    position: fixed;
+    top: 0;
+    width: 94%;
+    z-index: 999; /* Opcional: controla a ordem de empilhamento */
+    margin: 1%;
+}
+
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Biotif';
+    font-size: 1.5em; /* Tamanho de fonte relativo */
+    border-radius: 12px;
+    background-color: #00000000;
+    padding: 0.3em;
+   
+}
+
+nav a:hover {
+    background-color: rgba(78, 78, 78, 0.178);
+   transition: 400ms;
+}
+
+.nav_a {
+    display: flex;
+    justify-content: space-around; /* Esta linha distribui os itens igualmente com espaço em volta */
+    flex-direction: row;
+}
+
+a {
+    font-family: 'Biotif';
+    color: #ADD8E6;
+}
+
+nav a:not(:hover) {
+   transition: 400ms;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 7%; /* Adicione essa linha para definir a margem superior */
+    color: #fff;
+    font-family: 'Gilroy';
+    font-weight: bold;
+    font-size: 1.8em; /* Tamanho de fonte relativo */
+}
+
+
+span {
+    color: #fff;
+    font-family: 'Biotif';
+    margin-left: 2%;
+    font-size: 1.21em; /* Tamanho de fonte relativo */
+    padding-left: 1%;
+}
+
+.conteudo {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-around;
+}
+
+.paragrafo {
+    margin-left: 2%;
+}
+
+#inicio:visited {
+    color: rgb(201, 29, 29);
+    margin: 0 15px;
+}
+
+#codeIcon {
+    border-radius: 50%;
+    margin-right: 4%;
+    float: right;
+}
+
+@media (max-width: 580px) {
+    body {
+        padding: 3%;
+    }
+
+    nav a {
+        font-size: 0.762em;
+    }
+
+    header {
+        width:90%;
+        margin-top: 2.5%;
+    }
+
+    
+    span{
+        font-size: 0.83em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+        margin-top: 17%;
+    }
+
+    .paragrafo {
+        margin-left: 1%;
+        text-indent: 8%;
+    }
+
+    #codeIcon {
+        width: 9em;
+        height: 5em;
+        margin-left: 0.65%;
+    }
+}
+
+@media (min-width: 580px) and (max-width: 767px) {
+    body {
+        padding: 3%;
+    }
+
+    nav a {
+        font-size: 1.14em;
+    }
+
+    header {
+        width:90%;
+        margin-top: 2.3%;
+    }
+
+    
+    span{
+        font-size: 1em;
+    }
+
+    h2 {
+        font-size: 1.7em;
+        margin-top: 12%;
+    }
+
+    .paragrafo {
+        margin-left: 1%;
+    }
+
+    #codeIcon {
+        width: 12em;
+        height: 6.7em;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        padding: 1.2%;
+    }
+
+    nav a {
+        font-size: 1.25em;
+    }
+
+    
+    header {
+        width:93%;
+        margin-top: 1.5%;
+    }
+    
+    span{
+        font-size: 1.15em;
+    }
+
+    h2 {
+        font-size: 1.9em;
+        margin-top: 10%;
+    }
+
+    .paragrafo {
+        margin-left: 1%;
+    }
+
+    #codeIcon {
+        width: 13em;
+        height: 7em;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1365px) {
+    body {
+        padding: 1.2%;
+    }
+
+    nav a {
+        font-size: 1.26em;
+    }
+    
+    header {
+        
+        margin-top: 1.5%;
+    }
+
+    span{
+        font-size: 1.3em;
+    }
+
+    h2 {
+        font-size: 2.04em;
+        margin-top: 10%;
+    }
+
+    .paragrafo {
+        margin-left: 1%;
+    }
+
+    #codeIcon {
+        width: 15em;
+        height: 8.3em;
+    }
+}
+
+@media (min-width: 1366px) and (max-width: 1920px) {
+    body {
+        padding: 1%;
+    }
+
+    nav a {
+        font-size: 1.5em;
+    }
+    
+    span{
+        font-size: 1.39em;
+    }
+
+    
+
+    h2 {
+        font-size: 2.1em;
+    }
+
+    .paragrafo {
+        margin-left: 1%;
+    }
+
+    #codeIcon {
+        width: 16em;
+        height: 9.3em;
+    }
+}
+
+@media (min-width: 1920px) and (max-width: 2399px) {
+    body {
+        padding: 1%;
+    }
+
+    nav a {
+        font-size: 1.8em;
+    }
+    
+    span{
+        font-size: 1.547em;
+    }
+
+
+    h2 {
+        font-size: 2.2em;
+    }
+
+    .paragrafo {
+        margin-left: 1%;
+    }
+
+    #codeIcon {
+        width: 16em;
+        height: 9.3em;
+    }
+}
+
+@media (min-width: 2400px) {
+    /* Estilo para monitores ultrawide (2560px de largura ou mais) */
+    body {
+        padding: 1%;
+    }
+
+    nav a {
+        font-size: 1.8em;
+    }
+    
+    span{
+        font-size: 1.644em;
+    }
+
+
+    h2 {
+        font-size: 2.2em;
+    }
+
+    .paragrafo {
+        margin-left: 1%;
+    }
+
+    #codeIcon {
+        width: 17em;
+        height: 9.7em;
+    }
+}
