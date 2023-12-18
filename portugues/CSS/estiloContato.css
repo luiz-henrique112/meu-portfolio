@@ -1,0 +1,393 @@
+@font-face {
+    font-family: 'Gilroy'; /* O nome da sua fonte */
+    src: url('./Gilroy.otf') format('opentype'); /* O caminho para sua fonte e seu formato */
+    /* Você também pode adicionar outros formatos de fonte para compatibilidade cruzada, como woff, woff2, etc. */
+}
+
+@font-face {
+    font-family: 'Biotif'; /* O nome da sua fonte */
+    src: url('./biotif/Biotif-Regular.ttf') format('opentype'); /* O caminho para sua fonte e seu formato */
+    /* Você também pode adicionar outros formatos de fonte para compatibilidade cruzada, como woff, woff2, etc. */
+}
+
+body {
+    background: linear-gradient(30deg, #081083, #000000);
+    background-attachment: fixed; 
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+header {
+    background-color: rgba(78, 78, 78, 0.329);
+    backdrop-filter: blur(12px);
+    color: #fff;
+    text-align: center;
+    padding: 1.1%;
+    border-radius: 12px;
+    position: fixed;
+    top: 0;
+    width: 94%;
+    z-index: 999; /* Opcional: controla a ordem de empilhamento */
+    margin: 1%;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Biotif';
+    font-size: 1.5em; /* Tamanho de fonte relativo */
+    border-radius: 12px;
+    background-color: #00000000;
+    padding: 0.3em;
+}
+
+nav a:hover {
+    background-color: rgba(78, 78, 78, 0.178);
+    transition: 400ms;
+    text-decoration: none;
+}
+
+nav a:not(:hover) {
+    transition: 400ms;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    font-family: 'Gilroy';  
+    margin-bottom:2%;
+}
+
+
+
+#contato:visited {
+    color: rgb(201, 29, 29);
+    margin: 0 15px;
+}
+
+
+#meiosDeContato {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+   
+}
+#meiosDeContato.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height:67vh;
+    margin-top:0px ;
+}
+
+
+.nav_a {
+    display: flex;
+    justify-content: space-around; /* Esta linha distribui os itens igualmente com espaço em volta */
+    flex-direction: row;
+}
+
+details {
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #fff;
+    font-family: "Biotif";
+    padding:10px;
+    margin: 0.8%;
+}
+
+details summary {
+    cursor: pointer;
+    font-weight: bold;
+    font-family: "Biotif";
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+    font-family: "Biotif";
+}
+
+
+a:hover {
+    text-decoration: none;
+}
+
+@media (max-width: 580px) {
+    body {
+        padding: 3%;
+    }
+
+    nav a {
+        font-size: 0.8em;
+    }
+
+    header {
+        width:90%;
+        margin-top: 2.5%;
+    }
+
+    
+    a{
+        font-size: 1.1em;
+    }
+
+    details summary{
+        font-size: 1.3em;
+        margin-top: 6%;
+    }
+
+    details{
+        height: 14%;
+        width:90%;
+        margin:0px
+    }
+
+    #meiosDeContato{
+        width: 100%;
+        height: 40vh;
+    }
+
+    h2 {
+        font-size: 1.4em;
+        margin-top: 14%;
+    }
+
+}
+
+@media (min-width: 580px) and (max-width: 767px) {
+    body {
+        padding: 3%;
+    }
+
+    nav a {
+        font-size: 1.15em;
+    }
+
+    header {
+        width:90%;
+        margin-top: 2.3%;
+    }
+
+    
+    a{
+        font-size: 1.45em;
+    }
+
+    details summary{
+        font-size: 1.55em;
+        margin-top: 2.7%;
+    }
+
+    details{
+        height: 14%;
+        width:90%;
+        padding:5px
+    }
+
+    #meiosDeContato{
+        height: 43vh;
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 1.7em;
+        margin-top: 9.5%;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        padding: 1.2%;
+    }
+
+    nav a {
+        font-size: 1.27em;
+    }
+    header {
+        margin-top: 1.5%;
+        width:93%
+    }
+    
+    a{
+        font-size: 1.55em;
+    }
+
+    details summary{
+        font-size: 1.6em;
+        margin-top: 3.1%;
+    }
+
+    details{
+        height: 17%;
+        width:90%;
+    }
+
+    #meiosDeContato{
+        height: 95%;
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 2em;
+        margin-top: 9.5%;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+        body {
+            padding: 1.2%;
+        }
+
+        nav a {
+            font-size: 1.5em;
+        }
+        
+        header {
+            margin-top: 1.5%;
+        }
+        
+        a{
+            font-size: 1.55em;
+        }
+    
+        details summary{
+            font-size: 1.75em;
+            margin-top: 3%;
+        }
+    
+        details{
+            height: 18%;
+            width:90%;
+            margin-top: 1%;
+
+        }
+    
+        #meiosDeContato{
+            height: 100%;
+            width: 100%;
+        }
+    
+        h2 {
+            font-size: 2em;
+            margin-top: 9.5%;
+        }
+}
+
+@media (min-width: 1366px) and (max-width: 1920px) {
+    body {
+        padding: 1%;
+    }
+
+    nav a {
+        font-size: 1.7em;
+    }
+    
+    a{
+        font-size: 1.55em;
+    }
+
+    details summary{
+        font-size: 1.6em;
+        margin-top: 2.5%;
+    }
+
+    details{
+        height: 19%;
+        width:90%;
+        
+    }
+
+    #meiosDeContato{
+        height:100%;
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 2.2em;
+        margin-top: 9%;
+    }
+}
+
+@media (min-width: 1920px) and (max-width: 2399px) {
+    body {
+        padding: 1%;
+    }
+
+    nav a {
+        font-size: 1.9em;
+    }
+    
+    a{
+        font-size: 1.55em;
+    }
+
+    details summary{
+        font-size: 1.85em;
+        margin-top: 1.5%;
+    }
+
+    details{
+        height: 20%;
+        width:90%;
+    }
+
+    #meiosDeContato{
+        height:65vh;
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 2.2em;
+        margin-top: 7%;
+    }
+}
+
+@media (min-width: 2400px) {
+    /* Estilo para monitores ultrawide (2560px de largura ou mais) */
+    body {
+        padding: 1%;
+    }
+
+    nav a {
+        font-size: 1.9em;
+    }
+    
+    a{
+        font-size: 1.55em;
+    }
+
+    details summary{
+        font-size: 2em;
+        margin-top: 1.3%;
+    }
+
+    details{
+        height: 30%;
+        width:80%;
+        margin: 1%;
+    }
+
+    #meiosDeContato{
+        height:100%;
+        width: 100%;
+
+    }
+
+    h2 {
+        font-size: 2.2em;
+        margin-top: 5%;
+    }
+
+}
+
+
+
